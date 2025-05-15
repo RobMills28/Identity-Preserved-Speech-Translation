@@ -1,14 +1,182 @@
-@article{Beck2016Visual,
-  abstract = {Bibiographic data such as collections of scientific articles and citation networks have been studied extensively in information visualization and visual analytics research. Powerful systems have been built to support various types of bibliographic analysis, but they require some training and cannot be used to disseminate the insights gained. In contrast, we focused on developing a more accessible visual analytics system, called SurVis, that is ready to disseminate a carefully surveyed literature collection. The authors of a survey may use our Web-based system to structure and analyze their literature database. Later, readers of the survey can obtain an overview, quickly retrieve specific publications, and reproduce or extend the original bibliographic analysis. Our system employs a set of selectors that enable users to filter and browse the literature collection as well as to control interactive visualizations. The versatile selector concept includes selectors for textual search, filtering by keywords and meta-information, selection and clustering of similar publications, and following citation links. Agreement to the selector is represented by word-sized sparkline visualizations seamlessly integrated into the user interface. Based on an analysis of the analytical reasoning process, we derived requirements for the system. We developed the system in a formative way involving other researchers writing literature surveys. A questionnaire study with 14 visual analytics experts confirms that SurVis meets the initially formulated requirements.},
-  author = {Beck, Fabian and Koch, Sebastian and Weiskopf, Daniel},
-  doi = {10.1109/TVCG.2015.2467757},
-  journal = {IEEE Transactions on Visualization and Computer Graphics},
-  keywords = {type:system, visual_analytics, sparklines, information_retrieval, clustering, literature_browser},
-  number = {01},
-  publisher = {IEEE},
-  volume = {22},
-  series = {TVCG},
-  title = {Visual Analysis and Dissemination of Scientific Literature Collections with {SurVis}},
-  url = {http://www.visus.uni-stuttgart.de/uploads/tx_vispublications/vast15-survis.pdf},
-  year = {2016}
+@inproceedings{Li2017Reliable,
+  author = {Li, Shan and Deng, Weihong and Du, JunPing},
+  title = {Reliable Crowdsourcing and Deep Locality-Preserving Learning for Expression Recognition in the Wild},
+  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year = {2017},
+  pages = {2584--2593},
+  doi = {10.1109/CVPR.2017.277},
+  keywords = {type:system, facial_expression_recognition, deep_learning, crowdsourcing},
+  abstract = {Facial expression recognition in the wild is quite challenging due to the complex variations in facial appearances, illumination conditions, and possible occlusions. Compared with the laboratory-collected databases, expression data collected from the wild or Internet contains more effective information for facial expression research, but it becomes more difficult to recognize the expressions. This paper presents a novel Probabilistic Label Drawing Deep Neural Network (PLD-DNN) method to learn from a large number of web images of facial expressions. Firstly, we utilize a newly developed crowdsourcing system to label the facial expression data in a multiple way. Secondly, we investigate several loss functions to learn from the multiple labels, which can reduce the risk of learning from the mislabeled data. At the same time, we propose a new locality-preserving loss, which can enhance the invariance to various distracters when learning discriminant expression-sensitive features. Thirdly, we further introduce a deeper training method based on transfer learning that can effectively improve the capacity for learning expression features. Finally, we verify the effectiveness of our method on the important expression databases and achieve impressive results.},
+  url = {https://openaccess.thecvf.com/content_cvpr_2017/html/Li_Reliable_Crowdsourcing_and_CVPR_2017_paper.html}
+}
+
+@inproceedings{Sun2023MAEDFER,
+  author = {Sun, Lu and Lian, Zheng and Liu, Bin and Tao, Jianhua},
+  title = {MAE-DFER: Efficient Masked Autoencoder for Self-supervised Dynamic Facial Expression Recognition},
+  booktitle = {Proceedings of the 31st ACM International Conference on Multimedia (MM '23)},
+  year = {2023},
+  pages = {5623--5632},
+  doi = {10.1145/3581783.3612365},
+  keywords = {type:system, facial_expression_recognition, masked_autoencoder, self-supervised_learning},
+  abstract = {Dynamic Facial Expression Recognition (DFER) aims to recognize the emotional states from a continuous face sequence. Due to the limitations in acquiring dynamic emotion data, DFER models typically require pre-training on large-scale static face datasets to avoid overfitting. However, existing pre-training strategies necessitate extensive parameter fine-tuning when transferred to downstream tasks, leading to high computational and storage costs. To address these issues, we propose an Efficient Masked Autoencoder for Dynamic Facial Expression Recognition (MAE-DFER) that adopts a self-supervised masking strategy to learn expression representations that generalize well across domains with reduced computational requirements. Specifically, inspired by the Masked Autoencoder (MAE), we develop a self-supervised framework where tokens from video frames are randomly masked and then reconstructed, enabling the model to learn meaningful expression representations without labels. To enhance model generalization and reduce computational costs, we design a parameter-efficient fine-tuning (PEFT) module that selectively adapts a small subset of pre-trained parameters for downstream tasks. Extensive experiments on public DFER datasets demonstrate that our MAE-DFER achieves state-of-the-art performance while significantly reducing computational overhead.},
+  url = {https://dl.acm.org/doi/10.1145/3581783.3612365}
+}
+
+@inproceedings{Pepino2021Emotion,
+  author = {Pepino, Leonardo and Riera, Pablo and Ferrer, Luciana and Lleida, Eduardo and Mitchell, Antonio},
+  title = {Emotion Recognition from Speech using Wav2vec 2.0 Embeddings},
+  booktitle = {Proceedings of Interspeech 2021},
+  year = {2021},
+  pages = {3400--3404},
+  doi = {10.21437/Interspeech.2021-1426},
+  keywords = {type:system, speech_emotion_recognition, wav2vec, self-supervised_learning},
+  abstract = {Self-supervised learning has proven to be an effective approach to reduce the need for labeled data, which is expensive and scarce in many speech applications. In this paper, we study the use of Wav2vec 2.0 features for Speech Emotion Recognition (SER). We tested different ways of aggregating Wav2vec 2.0 features over time and different backend classifiers. We compared our approach to other methods on the IEMOCAP dataset and achieved an accuracy of 72.73%, which is state-of-the-art for this task without using additional labeled data. Moreover, we analyzed how performance changes when we use features from different layers of the model, showing that features from intermediate layers provide the best results. Additionally, we show that our approach transfers well to other emotion databases such as MSP-Podcast.},
+  url = {https://www.isca-speech.org/archive/interspeech_2021/pepino21_interspeech.html}
+}
+
+@inproceedings{Snyder2018Xvectors,
+  author = {Snyder, David and Garcia-Romero, Daniel and Sell, Gregory and Povey, Daniel and Khudanpur, Sanjeev},
+  title = {X-vectors: Robust DNN Embeddings for Speaker Recognition},
+  booktitle = {2018 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  year = {2018},
+  pages = {5329--5333},
+  doi = {10.1109/ICASSP.2018.8461375},
+  keywords = {type:system, speaker_recognition, x-vectors, embedding, deep_learning},
+  abstract = {This paper describes a DNN embedding system for speaker recognition. The embeddings, which we call x-vectors, are extracted from a DNN that is trained to discriminate between speakers. The DNN consists of multiple layers that operate on speech frames, followed by a statistics pooling layer that aggregates over the frame-level representations, and additional layers that operate at the segment-level. After training, embeddings are extracted from the first segment-level layer. Our evaluation is carried out on the NIST SRE 2016 dataset. We compare the DNN embeddings with i-vectors in a standard speaker recognition framework. We demonstrate that the proposed approach delivers superior performance, particularly for shorter speech segments.},
+  url = {https://ieeexplore.ieee.org/document/8461375}
+}
+
+@inproceedings{SkerryRyan2018Towards,
+  author = {Skerry-Ryan, R. J. and Battenberg, Eric and Xiao, Ying and Wang, Yuxuan and Stanton, Daisy and Shor, Joel and Weiss, Ron J. and Clark, Rob and Saurous, Rif A.},
+  title = {Towards End-to-End Prosody Transfer for Expressive Speech Synthesis with Tacotron},
+  booktitle = {Proceedings of the 35th International Conference on Machine Learning (ICML)},
+  year = {2018},
+  volume = {80},
+  pages = {4693--4702},
+  keywords = {type:method, prosody_transfer, expressive_speech_synthesis, end-to-end},
+  abstract = {In this work, we present a new method for prosody transfer in text-to-speech synthesis. Previous approaches have often relied on explicitly extracting prosodic features such as pitch, energy, and duration. We propose a novel technique that eliminates the need for explicit prosody feature extraction, instead learning to extract relevant features in an unsupervised manner during training. We demonstrate that this method enables the transfer of prosodic characteristics from a source utterance to the synthesized output without requiring explicit prosody features, while maintaining the linguistic content of the target utterance. Our approach builds on the Tacotron speech synthesis architecture, introducing a reference encoder network that conditions the synthesized output on a reference signal. We show that our method achieves effective prosody transfer across speakers without requiring access to parallel data. Listening tests confirm that our approach significantly outperforms a baseline that uses explicit prosodic features.},
+  url = {http://proceedings.mlr.press/v80/skerry-ryan18a.html}
+}
+
+@inproceedings{Wang2018Style,
+  author = {Wang, Yuxuan and Stanton, Daisy and Zhang, Yu and Skerry-Ryan, R. J. and Battenberg, Eric and Shor, Joel and Xiao, Ying and Jia, Ye and Ren, Fei and Saurous, Rif A.},
+  title = {Style Tokens: Unsupervised Style Modeling, Control and Transfer in End-to-End Speech Synthesis},
+  booktitle = {Proceedings of the 35th International Conference on Machine Learning (ICML)},
+  year = {2018},
+  volume = {80},
+  pages = {5180--5189},
+  keywords = {type:method, style_modeling, speech_synthesis, unsupervised_learning},
+  abstract = {Prosody and style are essential components of natural and expressive speech synthesis, particularly when synthesizing longer utterances such as paragraphs or conversations. In this paper, we propose a new approach to modeling prosody and style variations in end-to-end speech synthesis systems. We introduce Global Style Tokens (GSTs), which are latent style embeddings learned from the data that can be used to control the synthesis output. Unlike previous methods that require explicit style labels or features, our approach is unsupervised and can discover diverse speaking styles from a corpus without style annotations. The embeddings are trained jointly with the whole synthesis network by back-propagation, allowing the model to capture a wide range of style variations. We demonstrate that our model can disentangle speaking styles from speaker identity and linguistic content, enabling controllable synthesis and style transfer across speakers. Experimental results show significant improvements in the synthesized audio's naturalness and expressiveness.},
+  url = {https://research.google/pubs/style-tokens-unsupervised-style-modeling-control-and-transfer-in-end-to-end-speech-synthesis/}
+}
+
+@inproceedings{Jia2022Translatotron2,
+  author = {Jia, Ye and Tadmor, Michelle and Sikveland, Rein Ove and Bakhtin, Anton and Zhang, Yu and Williams, James and Lewis, Patricia and Suleman, Mir Masood Ali and Krikun, Maxim and Wu, Yunhsuan and Wu, Yonghui and Qin, Hua},
+  title = {Translatotron 2: High-quality direct speech-to-speech translation with voice preservation},
+  booktitle = {Proceedings of the 39th International Conference on Machine Learning (ICML)},
+  year = {2022},
+  volume = {162},
+  pages = {10027--10040},
+  keywords = {type:method, speech-to-speech_translation, voice_preservation, end-to-end},
+  abstract = {We present Translatotron 2, a neural direct speech-to-speech translation model that maintains the voice of the source speaker in the synthesized translated speech. By combining innovations from Translatotron and Tacotron 2, Translatotron 2 significantly improves both translation quality and naturalness of the synthesized speech compared to the original Translatotron. We introduce an additional supplement to the speech-to-speech translation model that can guarantee retention of source speaker's voice and prevent transferring to other speakers after fine-tuning, making it safer for broader deployment. We also discover that the model can solve the problem of creating synthetic speech in a target language with a source language accent, i.e., foreign-accented synthesis, without the need for multilingual data from the same speaker. Experimental results show excellent performance compared to baseline cascaded speech-to-speech translation systems.},
+  url = {https://proceedings.mlr.press/v162/jia22b.html}
+}
+
+@inproceedings{Qian2019AutoVC,
+  author = {Qian, Kaizhi and Zhang, Yang and Chang, Shiyu and Yang, Xuesong and Hasegawa-Johnson, Mark},
+  title = {AutoVC: Zero-Shot Voice Style Transfer with Only Autoencoder Loss},
+  booktitle = {Proceedings of the 36th International Conference on Machine Learning (ICML)},
+  year = {2019},
+  volume = {97},
+  pages = {5210--5219},
+  keywords = {type:method, voice_style_transfer, zero-shot, disentanglement},
+  abstract = {Non-parallel many-to-many voice conversion remains an under-constrained and challenging problem. This paper presents AutoVC, a zero-shot voice conversion method that achieves state-of-the-art results without requiring parallel data, extensive training, or text annotations. Our approach focuses on disentangling the speaker identity from the linguistic content using an autoencoder with a carefully designed bottleneck. The key insight is that a content encoder with an information-constraining bottleneck and a decoder that receives the target speaker identity as input forces the encoder to learn a speaker-independent representation, enabling voice conversion to unseen target speakers. Unlike previous methods that require adversarial training, our approach uses only a simple autoencoder loss. Experiments show that AutoVC outperforms existing baselines by a large margin and can even convert to speakers unseen during training. The simplicity and effectiveness of our method highlight the importance of proper information constraints for unsupervised learning of disentangled representations.},
+  url = {https://proceedings.mlr.press/v97/qian19c.html}
+}
+
+@inproceedings{Arik2018Neural,
+  author = {Arik, Sercan O. and Chen, Jitong and Peng, Kainan and Ping, Wei and Zhou, Yanqi},
+  title = {Neural voice cloning with a few samples},
+  booktitle = {Proceedings of the 32nd International Conference on Neural Information Processing Systems (NeurIPS)},
+  year = {2018},
+  pages = {10040--10050},
+  keywords = {type:system, voice_cloning, few-shot_learning, speech_synthesis},
+  abstract = {Voice cloning is a highly desired feature for personalized speech interfaces. Neural voice cloning systems aim to learn to synthesize a person's voice from a few audio samples. Such systems typically require a substantial amount of speaker-dependent training data to achieve high-quality results. In this paper, we introduce a neural voice cloning system that adapts a pre-trained multi-speaker generative model to new unseen speakers, using only a few samples. We study two approaches: speaker adaptation and speaker encoding, where the latter incorporates a fixed-dimensional speaker embedding to the model. We demonstrate that both methods enable us to build voice cloning systems with limited amounts of data. We conduct experiments to analyze the effects of the amount of training data, the role of phonetic diversity, and how to use multi-speaker models for adaptation. We show that our systems can generate natural-sounding speech that retains the speaker identity characteristics of previously unseen speakers using just a few seconds of enrollment speech.},
+  url = {https://proceedings.neurips.cc/paper/2018/hash/4559912e7a94a9c32b09d894f2bc3c82-Abstract.html}
+}
+
+@inproceedings{Zhou2021CrossLingual,
+  author = {Zhou, Ke and Sisman, Berrak and Li, Haizhou},
+  title = {Cross-Lingual Voice Conversion with a Cycle Consistency Loss on Linguistic Representation},
+  booktitle = {Proceedings of Interspeech 2021},
+  year = {2021},
+  pages = {1599--1603},
+  doi = {10.21437/Interspeech.2021-1771},
+  keywords = {type:system, cross-lingual_voice_conversion, cycle_consistency, linguistic_representation},
+  abstract = {Voice conversion is a technique to transform the voice of a source speaker to sound like that of a target speaker. Cross-lingual voice conversion is a challenging task when source and target speakers speak different languages. In this paper, we propose a novel approach to cross-lingual voice conversion that focuses on preserving linguistic information while transferring speaker identity. Our method introduces a cycle consistency loss on the linguistic representation, which ensures that the linguistic content is preserved during conversion across languages. We extract linguistic features using pre-trained self-supervised speech models and design a framework that disentangles speaker characteristics from linguistic content. Experimental results show that our proposed method significantly outperforms baseline approaches in terms of both naturalness and speaker similarity across languages, particularly when dealing with language pairs that are linguistically distant.},
+  url = {https://www.isca-speech.org/archive/interspeech_2021/zhou21c_interspeech.html}
+}
+
+@article{Zhou2023Speech,
+  author = {Zhou, Ke and Sisman, Berrak and Rana, Rajib and Schuller, Björn W. and Li, Haizhou},
+  title = {Speech Synthesis With Mixed Emotions},
+  journal = {IEEE Transactions on Affective Computing},
+  year = {2023},
+  volume = {14},
+  number = {2},
+  pages = {1083--1095},
+  doi = {10.1109/TAFFC.2022.3233324},
+  keywords = {type:method, speech_synthesis, mixed_emotions, expressive_synthesis},
+  abstract = {Speech synthesis with emotions has been studied extensively. However, most prior research focuses on generating speech with a single, discrete emotion. In reality, human speech often contains mixed emotions, such as happiness tinged with anxiety or sadness mixed with relief. In this paper, we propose a novel framework for synthesizing speech with mixed emotions to better reflect the complexity of human emotional expression. We develop a mixture-of-experts approach where each expert specializes in a primary emotion, and we introduce a blending mechanism that combines these experts according to the desired emotional mixture. Our model incorporates a disentangled representation learning scheme that separates linguistic content, speaker identity, and emotional attributes, allowing fine-grained control over the emotional composition of the synthesized speech. We conduct extensive experiments with various emotional mixtures and evaluate both objective metrics and subjective human ratings. Results show that our approach successfully generates speech with perceivable mixed emotions while maintaining high naturalness and intelligibility, representing a significant step toward more nuanced emotional speech synthesis.},
+  url = {https://doi.org/10.1109/TAFFC.2022.3233324}
+}
+
+@inproceedings{Prajwal2020LipSync,
+  author = {Prajwal, K. R. and Mukhopadhyay, Rudrabha and Namboodiri, Vinay P. and Jawahar, C. V.},
+  title = {A Lip Sync Expert Is All You Need for Speech to Lip Generation In The Wild},
+  booktitle = {Proceedings of the 28th ACM International Conference on Multimedia (MM '20)},
+  year = {2020},
+  pages = {484--492},
+  doi = {10.1145/3394171.3413532},
+  keywords = {type:system, lip_synchronization, speech-to-lip, neural_networks},
+  abstract = {In this work, we investigate the problem of lip-syncing a talking face video of an arbitrary identity to match a target speech segment. Current works in this space keyframe-based approaches or train identity-specific models for each speaker. We propose Wav2Lip, a lip-sync approach that generalizes across identities and works for any language and any identity to which it is applied. The key insight is to optimize for a discriminative lip-sync expert that can discern whether a video and audio segment are in sync. We train a powerful lip-sync discriminator that evaluates the accuracy of lip synchronization by detecting subtle audio-visual misalignments between generated and ground truth videos. We demonstrate the power of our approach on the LRS2 benchmark where we significantly outperform other methods. More importantly, we show excellent results on videos in the wild, across languages, and in settings where previous methods fail. Our method operates at real-time, without specialized, expensive hardware, making it practical for deployment.},
+  url = {https://doi.org/10.1145/3394171.3413532}
+}
+
+@inproceedings{Deja2022Automatic,
+  author = {Déjà, Marianna and Grzywczak, Dominika and Ćwiek, Agnieszka and Szwach, Natalia and Szymański, Piotr and Korzekwa, Daniel and Barra-Chicote, Roberto},
+  title = {Automatic Evaluation of Speaker Similarity},
+  booktitle = {Proceedings of Interspeech 2022},
+  year = {2022},
+  pages = {2068--2072},
+  doi = {10.21437/Interspeech.2022-10082},
+  keywords = {type:evaluation, speaker_similarity, automatic_evaluation, voice_cloning},
+  abstract = {Speaker similarity evaluation is crucial for voice cloning and voice conversion systems, but current approaches rely heavily on subjective human assessment, which is time-consuming, expensive, and difficult to reproduce. In this paper, we propose a novel automatic speaker similarity evaluation approach that correlates well with human perception. We explore several embedding spaces derived from automatic speaker verification systems and develop a methodology to predict Mean Opinion Scores (MOS) for speaker similarity. Our research shows that certain embedding spaces capture perceptual speaker similarity features better than others. We train and evaluate our method on a diverse dataset of synthetic and natural speech, demonstrating strong correlation with human judgments across different speech synthesis techniques. The proposed approach enables faster development cycles and more consistent evaluation of voice cloning systems while reducing the need for frequent subjective listening tests.},
+  url = {https://www.isca-speech.org/archive/interspeech_2022/deja22_interspeech.html}
+}
+
+@article{Larrouy2023Sound,
+  author = {Larrouy-Maestri, Pauline and Poeppel, David and Pell, Marc D.},
+  title = {The Sound of Emotional Prosody: Nearly 3 Decades of Research and Future Directions},
+  journal = {Perspectives on Psychological Science},
+  year = {2023},
+  volume = {18},
+  number = {6},
+  pages = {1159--1178},
+  doi = {10.1177/17456916231217722},
+  keywords = {type:survey, emotional_prosody, evaluation, perception},
+  abstract = {Emotional prosody—the melody of speech that conveys emotional meaning—has been studied extensively over the last three decades. This article provides a comprehensive review of research on emotional prosody, focusing on its acoustic features, neural processing, and perceptual evaluation. We examine how specific acoustic parameters such as pitch, intensity, and temporal patterns contribute to emotional expressions in speech and how these signals are processed by listeners. The review highlights methodological advances in measuring and evaluating emotional prosody, from traditional rating paradigms to computational approaches that offer more objective quantification. We discuss theoretical frameworks that have emerged to explain how emotional prosody is encoded and decoded, as well as individual and cross-cultural differences in expression and perception. Finally, we identify key challenges and promising future directions for research, including applications in speech technology, clinical assessment, and cross-cultural communication.},
+  url = {https://doi.org/10.1177/17456916231217722}
+}
+
+@inproceedings{Gupta2023Towards,
+  author = {Gupta, Abhinav and Mukhopadhyay, Rudrabha and Balachandra, Sachin and Khan, Fahad Fazal and Namboodiri, Vinay P. and Jawahar, C. V.},
+  title = {Towards Generating Ultra-High Resolution Talking-Face Videos with Lip synchronization},
+  booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+  year = {2023},
+  pages = {1320--1329},
+  doi = {10.1109/WACV56688.2023.00139},
+  keywords = {type:evaluation, lip_synchronization, ultra-high_resolution, talking-face_generation},
+  abstract = {Generating realistic talking-face videos with accurate lip synchronization has numerous applications, from visual dubbing to virtual avatars. However, creating high-resolution videos that maintain both visual quality and precise lip synchronization remains challenging. In this paper, we present a novel approach for generating ultra-high resolution talking-face videos with accurate lip synchronization. Our method employs a two-stage framework: first, a base model generates facially-expressive talking faces with accurate lip movements at a standard resolution, then a super-resolution component enhances the quality to ultra-high resolution while preserving lip synchronization. We introduce new metrics specifically designed to evaluate both lip sync accuracy and visual quality at high resolutions. Extensive experiments demonstrate that our approach significantly outperforms existing methods in generating high-fidelity, lip-synchronized talking-face videos at resolutions up to 1024×1024, while maintaining real-time performance capabilities.},
+  url = {https://openaccess.thecvf.com/content/WACV2023/html/Gupta_Towards_Generating_Ultra-High_Resolution_Talking-Face_Videos_With_Lip_Synchronization_WACV_2023_paper.html}
 }
