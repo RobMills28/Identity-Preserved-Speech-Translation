@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SurVis - Visual Literature Browser
 
 ![Screenshot](/doc/survis.png)
@@ -64,3 +65,6 @@ Please contact me (fabian.beck@uni-bamberg.de) if you know other collections usi
 Fabian Beck
 
 http://research.fbeck.com
+=======
+# Identity-Preserved-Speech-Translation
+>>>>>>> origin/main
